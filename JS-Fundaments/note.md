@@ -104,7 +104,7 @@ A function is a set of statements in js which is
 -> has a set of statements that can either perform tasks or calculations
 -> return a value
 
-7. What is an Operators
+7. What is an Operators?
 
 we use operators to create expressions.
 
@@ -116,6 +116,26 @@ An expressions is something that performs some calculations and return a value.
 4. Logical
 5. Bitwise
 6. Ternary 
+
+=> Logical operators with non booleans (falsey/truthy)
+ There are only six falsey values in js : undefined, null, NaN, 0, ""(empty string),
+ and false. Anthing that is not falsey it truthy.
+
+ Examples =:
+ let a = false;
+ let b= 0;
+ let c = null;
+ 
+ let z = a || b || c;
+ console.log(z); // null
+
+8. What is Control flow
+conditinals: if ...else / switch ...case
+
+
+
+
+
 
 
 
