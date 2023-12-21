@@ -133,6 +133,25 @@ An expressions is something that performs some calculations and return a value.
 conditinals: if ...else / switch ...case
 
 
+9. What is loops?
+
+=> Repeat an action a number of times.
+
+console.log("Hello World!");
+console.log("Hello World!");
+console.log("Hello World!");
+console.log("Hello World!");
+console.log("Hello World!");
+
+for / while / do ..while/ for ..in / for ..of
+
+10. What is break and continue?
+
+Break=> we use break when we want to jumps out of the entire loop.
+
+Continue=> we use continue when we want to jump out of the current iteration and move to the next iteration.
+
+
 
 
 
