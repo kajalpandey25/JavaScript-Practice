@@ -127,27 +127,90 @@
 // Exercise: Create a factory function & a construction function that creates a circle Object, takes in radius , and gives us a method to print the area of the circle.
 
 // Factory Function
-function createCircle(radius) {
-  return {
-      radius: radius,
-      calculateArea: function() {
-          return Math.PI * Math.pow(this.radius, 2);
-      }
-  };
-}
+// function createCircle(radius) {
+//   return {
+//       radius: radius,
+//       calculateArea: function() {
+//           return Math.PI * Math.pow(this.radius, 2);
+//       }
+//   };
+// }
 
-// Constructor Function
-function Circle(radius) {
-  this.radius = radius;
-  this.calculateArea = function() {
-      return Math.PI * Math.pow(this.radius, 2);
-  };
-}
+// // Constructor Function
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.calculateArea = function() {
+//       return Math.PI * Math.pow(this.radius, 2);
+//   };
+// }
 
-// Example usage with the factory function
-const circle1 = createCircle(5);
-console.log("Circle 1 Area:", circle1.calculateArea());
+// // Example usage with the factory function
+// const circle1 = createCircle(5);
+// console.log("Circle 1 Area:", circle1.calculateArea());
 
-// Example usage with the constructor function
-const circle2 = new Circle(7);
-console.log("Circle 2 Area:", circle2.calculateArea());
+// // Example usage with the constructor function
+// const circle2 = new Circle(7);
+// console.log("Circle 2 Area:", circle2.calculateArea());
+
+
+// call(), apply() & bind()
+// function sayHello(favSubject, favFood) {
+//   console.log('Hello from', this.name);
+//   console.log('I love', favSubject, '&', favFood);
+// }
+
+// sayHello.call({name:'Kajal'}, 'Maths', 'Pizza');
+
+// sayHello.apply({name:'Kajal'}, ['Computer', 'Momos']);
+
+// const sayHelloToSwapnil = sayHello.bind({name: 'Swapnil'});
+// sayHelloToSwapnil('JavaScript', 'Sweets');
+
+
+
+// Value vs Reference
+
+// let x = 10;
+// let y = x; // value copied by value
+
+// x = 20;
+
+// console.log('x: ', x); //20
+// console.log('y: ', y); //10
+
+// let a = {value: 10};
+// let b = a; //Object copied by reference
+
+// b.value = 20;
+
+// console.log('a: ', a); // {value: 20}
+// console.log('b: ', b); // {value: 20}
+
+// Methods of object constructor
+// 1. Object.keys
+// let obj = {x: 1, y: 2}
+
+// console.log(Object.keys(obj));
+
+// // 2. Object.values
+
+// console.log(Object.values(obj));
+
+// // 3. Object.entries
+
+// console.log(Object.entries(obj));
+
+// // in keyword
+
+// console.log(('x' in obj));
+
+// Object.assign
+
+let obj1 = {x: 1, y: 2}
+
+let obj2 = {};
+
+Object.assign(obj2, obj1);
+console.log(obj2);
+
+
