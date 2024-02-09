@@ -40,7 +40,22 @@ Math, Sting, Date
 
 1. Math => Math is a built-in object that has properties and method for mathematical constants and functions. Math is not a constructor. All properties and method of Math are static & we do not need to use the new keyword to use Math.
 
+2. String => The String object is used to represent and manipute a sequence of characters. String can be created as perimitive, from string literals, or as objects, using the String() constructor.
 
+
+3. Date => The Date() constructor creates Date objects. When called as a function, it returns a string representing the current time.
+
+<!-- To get dates, you can use these four methods  -->
+
+1. getFullYear
+2. getMonth
+3.getDate
+4.getDay
+
+
+-> JS- Essential ES6(2015+)
+
+1. Arrow functions => An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
 
 
 

@@ -13,15 +13,13 @@
 // Add property using([])
 // account['newPropertyTwo'] = "Anything";
 
-
 // delete property
 // delete account.type;
 // delete account['active']
 
 // console.log(account);
 
-
-//3. Passing into a function as an argument 
+//3. Passing into a function as an argument
 // can be passes to a function as an arguments
 
 // let account = {
@@ -32,7 +30,7 @@
 // }
 // function printAccountDetails(obj) {
 //     console.log('Name:', obj.name, 'Type: ', obj.type, 'Active: ', obj.active, 'Balance: ', obj.balance);
-    
+
 // }
 // printAccountDetails(account);
 
@@ -60,7 +58,7 @@
 //         print: function (){
 //             console.log('Name: ', this.name, 'Type: ', this.type, 'Active: ', this.active, 'Balance: ', this.balance);
 //           }
-        
+
 //     }
 //     return account1;
 // };
@@ -73,8 +71,7 @@
 // console.log(acc2);
 // acc2.print();
 
-
-// Factory Functions:- 
+// Factory Functions:-
 // A factory function is a design pattern in programming that is used to create objects.
 
 // problems with this factory function: if we have 5000 user obj, we have 5000 copies of the print() function.
@@ -99,8 +96,6 @@
 // console.log(user2);
 // user2.sayFullName();
 
-
-
 // Constructor function(new):
 
 // function Account(accountName, accountType, accountBalance, isActive) {
@@ -112,7 +107,7 @@
 //   this.print = function(){
 //     console.log('Name: ', this.name, 'Type: ', this.type, 'Active: ', this.active, 'Balance: ', this.balance);
 //   }
-//   // return this 
+//   // return this
 // }
 
 // const acc1 = new Account('Kajal', 'Saving', 10000, true);
@@ -122,7 +117,6 @@
 // console.log(acc2);
 // acc1.print();
 // acc2.print();
-
 
 // Exercise: Create a factory function & a construction function that creates a circle Object, takes in radius , and gives us a method to print the area of the circle.
 
@@ -152,7 +146,6 @@
 // const circle2 = new Circle(7);
 // console.log("Circle 2 Area:", circle2.calculateArea());
 
-
 // call(), apply() & bind()
 // function sayHello(favSubject, favFood) {
 //   console.log('Hello from', this.name);
@@ -165,8 +158,6 @@
 
 // const sayHelloToSwapnil = sayHello.bind({name: 'Swapnil'});
 // sayHelloToSwapnil('JavaScript', 'Sweets');
-
-
 
 // Value vs Reference
 
@@ -213,17 +204,90 @@
 // Object.assign(obj2, obj1);
 // console.log(obj2);
 
-
 // Built-in function
 // 1. Math
 
-console.log(Math.floor(45.99995)) //45
-console.log(Math.ceil(7.004)); //8
-console.log(Math.max(1,3,2)); //3
-console.log(Math.min(2,3,1)); //1
+// console.log(Math.floor(45.99995)) //45
+// console.log(Math.ceil(7.004)); //8
+// console.log(Math.max(1,3,2)); //3
+// console.log(Math.min(2,3,1)); //1
+// console.log(Math.PI); // 3.141592653589793
 
-function getRandomIntInclusive(min,max){
-    min = Math.ceil(min);
-    max= Math.floor(max);
-    return Math.floor(Math.random() * (max+min+1) + min);
-}
+// function getRandomIntInclusive(min,max){
+//     min = Math.ceil(min);
+//     max= Math.floor(max);
+//     return Math.floor(Math.random() * (max+min+1) + min);
+// }
+
+// 2. String
+
+// console.log("This is a string"); // This is a string
+// console.log(String("this is a string")); // this is a string
+// console.log(new String("a new string")); // String {'a new string'} 
+
+// method 
+
+// String1.length;
+// String1.inclusion();
+// String1.startsWith();
+// String1.endsWith();
+// String1.indexOf();
+// String1.replace();
+// String1.toUpperCase();
+// String1.toLowerCase();
+// String1.trim();
+// String1.split();
+
+// let str1 = "Math, Science, English";
+// console.log(str1.split(",  "));
+// console.log(str1.toUpperCase());
+// console.log(str1.toLowerCase());
+// console.log(str1.length);
+// console.log(str1.includes("English"));
+// console.log(str1.startsWith("Math"));
+// console.log(str1.endsWith("English"));
+// console.log(str1.indexOf());
+// console.log(str1.trim());
+
+
+// 3. Date
+
+// const date1 = new Date('December 17, 1995 03:24:00');
+// // Sun Dec 17 1995 03:24:00 GMT...
+
+// const date2 = new Date('1995-12-17T03:24:00');
+// // Sun Dec 17 1995 03:24:00 GMT...
+
+// console.log(date1 === date2);
+// // Expected output: false
+
+// console.log(date1 - date2);
+// // Expected output: 0
+
+
+// syntax
+
+// new Date()
+// new Date(value)
+// new Date(dateString)
+// new Date(dateObject)
+
+// new Date(year, monthIndex)
+// new Date(year, monthIndex, day)
+// new Date(year, monthIndex, day, hours)
+// new Date(year, monthIndex, day, hours, minutes)
+// new Date(year, monthIndex, day, hours, minutes, seconds)
+// new Date(year, monthIndex, day, hours, minutes, seconds, milliseconds)
+
+// Date()
+
+// const now = new Date();
+// console.log(now.toDateString());
+// console.log(now.toTimeString());
+// console.log(now.toISOString());
+
+// const date1 = new Date('Sep 09 2021 11:15');
+// const date2 = new Date(2021, 0, 10, 11, 0);
+
+
+// Arrow Functions
