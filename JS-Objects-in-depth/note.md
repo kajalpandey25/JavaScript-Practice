@@ -58,4 +58,34 @@ Math, Sting, Date
 1. Arrow functions => An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
 
 
+2. Object shorthand => It the name of the key matches the name of the variables that's going into that key. You can get rid of the value and just use the variable name.
 
+
+<!-- Let vs const vs var -->
+1. let - block scope
+2. var - function scope
+3. consr - can not be reassign 
+
+
+<!-- Statements vs Expressions -->
+An expression is anything that evaluates to a value. Expressions are usually on the right-hand side of statements.
+
+
+example => 1+2, true ? 'yes': 'no', {1,2,3}, {name:'Kajal'}
+
+statements => 
+let sum = 1+2
+if ...else
+while
+try ...catch
+let arr = [1,2,3]
+let obj = {name:'Kajal'}
+
+
+<!-- Rest and Spread  -->
+Rest operator => Rest operator helps collect all the arguments in an array.
+
+Spread operator => The spread operator explodes aaray or object in place.
+
+
+<!-- Destructuring Arrays and Objects -->

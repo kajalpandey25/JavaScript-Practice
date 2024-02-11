@@ -223,9 +223,9 @@
 
 // console.log("This is a string"); // This is a string
 // console.log(String("this is a string")); // this is a string
-// console.log(new String("a new string")); // String {'a new string'} 
+// console.log(new String("a new string")); // String {'a new string'}
 
-// method 
+// method
 
 // String1.length;
 // String1.inclusion();
@@ -249,7 +249,6 @@
 // console.log(str1.indexOf());
 // console.log(str1.trim());
 
-
 // 3. Date
 
 // const date1 = new Date('December 17, 1995 03:24:00');
@@ -263,7 +262,6 @@
 
 // console.log(date1 - date2);
 // // Expected output: 0
-
 
 // syntax
 
@@ -289,5 +287,99 @@
 // const date1 = new Date('Sep 09 2021 11:15');
 // const date2 = new Date(2021, 0, 10, 11, 0);
 
-
 // Arrow Functions
+
+// Regural function
+// function greet(greeting, name) {
+//   return `${greeting}, from ${name}`;
+// }
+// console.log(greet('Hello', 'Khushi'));
+
+// Arrow function
+// let newGreet = (greeting, name)=>{
+//     return `${greeting}, from ${name}`;
+// }
+// console.log(newGreet('Hello', 'Kajal'));
+
+// Object shorthand
+
+// const UserData = (name, email)=>({
+//     name,
+//     email
+// })
+
+// let vs const vs var
+
+// function scopeTest() {
+//   var outerVar = "outer var";
+//   let outerLet = "outer let";
+
+//   if (true) {
+//     var innerVar = "inner var"; // function scoped
+//     let innerLet = "inner let"; // block scope
+//   }
+
+//   console.log(innerVar);
+//   console.log(innerLet);
+// }
+
+// scopeTest();
+
+
+// const 
+
+// const user = {
+//     name:'Kajal'
+// }
+
+// user.name = "Khushi";
+// console.log(user);
+
+// const users = ['a', 'b', 'c']
+// users.push('d');
+// console.log(users);
+
+// Rest operator
+
+// function doSomething(first, second, ...rest) {
+//   console.log(first, second, rest);    
+// }
+
+// doSomething('one', 'two', 'three', 'four', 'five');
+
+// Spread operator
+
+// let arr = [1,3,5,7,9];
+// console.log(...arr);
+
+// let user = {
+//     firstName : 'Kajal',
+//     lastName:'Pandey'
+// }
+// console.log({
+//     ...user, fullName:`${user.firstName} ${user.lastName}`
+// });
+
+
+//  Destructuring Arrays and Objects 
+
+// const arr = [1,3,5,7,9];
+// // const [first, second, ...rest] = arr;
+// // console.log(first, second, rest);
+
+// let first = arr[0];
+// let second = arr[1]
+// console.log(first, second);
+
+let user = {
+    firstName: 'Kajal',
+    lastName:'Pandey', 
+    age:38,
+    posts:[
+        {title: 'Post 1', comments: 10},
+        {title: 'Post 2', comments: 11}
+    ]
+}
+
+// const {firstName: first, lastName, age-40, ...rest} = user;
+// console.log(first, lastName, age, rest);
