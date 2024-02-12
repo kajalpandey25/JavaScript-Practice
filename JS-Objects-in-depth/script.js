@@ -371,15 +371,30 @@
 // let second = arr[1]
 // console.log(first, second);
 
-let user = {
-    firstName: 'Kajal',
-    lastName:'Pandey', 
-    age:38,
-    posts:[
-        {title: 'Post 1', comments: 10},
-        {title: 'Post 2', comments: 11}
-    ]
-}
+// let user = {
+//     firstName: 'Kajal',
+//     lastName:'Pandey', 
+//     age:38,
+//     posts:[
+//         {title: 'Post 1', comments: 10},
+//         {title: 'Post 2', comments: 11}
+//     ]
+// }
 
-// const {firstName: first, lastName, age-40, ...rest} = user;
+// const {firstName: first, lastName, age=40, ...rest} = user;
 // console.log(first, lastName, age, rest);
+
+
+// only the deepest keys become variables
+// const {posts:[{title}, {title: t2}]} = user;
+// console.log(title, t2);
+
+
+// let first = user.firstName;
+// console.log(first);
+
+// let { firstName:first} = user;
+// console.log(first);
+
+
+

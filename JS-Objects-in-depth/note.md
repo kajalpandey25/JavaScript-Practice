@@ -89,3 +89,16 @@ Spread operator => The spread operator explodes aaray or object in place.
 
 
 <!-- Destructuring Arrays and Objects -->
+
+
+<!-- Events handlers -->
+Event handlers allow you to react when certain things (an events) happen to the page on an element on the page.
+
+There are many diff types of events that can occur. for example-
+1. The user selects a certain element or hovers the cursor over a certain element.
+2. The user chooses a key on the keyboard.
+3. The user resizes or closes the browser window.
+4. A web page finishes loading.
+5. A form is submitted.
+6. A video is played, paused or finishes.
+5. An error occurs.
