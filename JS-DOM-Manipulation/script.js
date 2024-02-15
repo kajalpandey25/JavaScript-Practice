@@ -25,7 +25,7 @@
 // let itemList2Arr2 = [...itemList2];
 // console.log(itemList2Arr2);
 
-let parent = document.querySelector('.item-container');
+// let parent = document.querySelector('.item-container');
 // let children = parent.childNodes;
 // console.log(children);
 
@@ -50,6 +50,9 @@ let parent = document.querySelector('.item-container');
 // console.log(document.getElementById("demopara").innerHTML);
 
 
-item-one.classList.add('hello')
+// item-one.classList.add('hello')
 // itemOne.classList.remove('hello')
+
+// itemOne.style.backgroundColor = "gold";
+
 
