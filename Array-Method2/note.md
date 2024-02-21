@@ -69,3 +69,23 @@ The syntax is:
 let result = arr.map(function(item, index, array) {
   // returns the new value instead of item
 });
+
+
+sort(fn) =>
+The call to arr.sort() sorts the array in place, changing its element order.
+
+It also returns the sorted array, but the returned value is usually ignored, as arr itself is modified.
+
+1. A comparison function may return any number =>
+Actually, a comparison function is only required to return a positive number to say “greater” and a negative number to say “less”.
+
+2. Arrow functions for the best ->
+Remember arrow functions? We can use them here for neater sorting:
+
+arr.sort( (a, b) => a - b );
+This works exactly the same as the longer version above.
+
+3. Use localeCompare for strings =>
+Remember strings comparison algorithm? It compares letters by their codes by default.
+
+For many alphabets, it’s better to use str.localeCompare method to correctly sort letters, such as Ö.
